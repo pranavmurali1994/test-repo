@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>View Files</title></head>
+<body>
+  <h1>Uploaded Files</h1>
+  <ul>
+    {% for blob in blobs %}
+      <li><a href="{{ blob.name }}">{{ blob.name }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
